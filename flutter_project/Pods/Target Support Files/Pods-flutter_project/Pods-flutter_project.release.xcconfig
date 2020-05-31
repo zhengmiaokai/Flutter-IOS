@@ -1,0 +1,15 @@
+CLANG_CXX_LANGUAGE_STANDARD = c++11
+CLANG_CXX_LIBRARY = libc++
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../flutter_module/.ios/Flutter" "${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/FlutterPluginRegistrant" "${PODS_ROOT}/Headers/Public/flutter_boost" "${PODS_ROOT}/Headers/Public/path_provider" "${PODS_ROOT}/Headers/Public/shared_preferences" "${PODS_ROOT}/Headers/Public/sqflite"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FMDB" "${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant" "${PODS_CONFIGURATION_BUILD_DIR}/flutter_boost" "${PODS_CONFIGURATION_BUILD_DIR}/path_provider" "${PODS_CONFIGURATION_BUILD_DIR}/shared_preferences" "${PODS_CONFIGURATION_BUILD_DIR}/sqflite"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_ROOT}/Headers/Public/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap" -fmodule-map-file="${PODS_ROOT}/Headers/Public/path_provider/path_provider.modulemap" -fmodule-map-file="${PODS_ROOT}/Headers/Public/shared_preferences/shared_preferences.modulemap" -fmodule-map-file="${PODS_ROOT}/Headers/Public/sqflite/sqflite.modulemap" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/flutter_boost" -iframework "${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine" -iframework "${PODS_ROOT}/../../flutter_module/.ios/Flutter"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FMDB" -l"FlutterPluginRegistrant" -l"c++" -l"flutter_boost" -l"path_provider" -l"shared_preferences" -l"sqflite" -l"sqlite3" -framework "App" -framework "Flutter"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/path_provider/path_provider.modulemap" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/shared_preferences/shared_preferences.modulemap" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/sqflite/sqflite.modulemap"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
